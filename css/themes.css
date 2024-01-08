@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* Reset */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 1.6rem 'Open-sans', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+    background-color: var(--bgcolor-theme);
+    color: var(--text-color);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    transition: all .6s ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-weight: normal;
+}
+
+/* Ajouter les images */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+button, input {
+    padding: 0;
+    background: none;
+    border: 0;
+}
+/* End Reset */
+
+
+/* Thème */
+:root {
+    color-scheme: light dark; 
+    --bgcolor-theme: #fafafa;
+    --text-color: #000000;
+    --button-item-color:#dd5347;
+}
+
+/* Css pour la barre de navigation*/
+.icon {
+    display: flex;
+    align-items: center;
+    color: var(--bgcolor-theme);
+}
+.icon h2{
+    font-weight: normal;
+    font-family: 'Open-sans', sans-serif;
+    display: flex;
+    align-items: center;
+    color: #5f5f5f;
+    font-size: 2.4rem;
+}
+.icon img{
+    margin: auto 0rem auto 2rem;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    background-color: var(--bgcolor-theme);
+    z-index: 1; /* Pour assurer que la navbar est au-dessus du contenu */
+    width: 100%;
+    justify-content: space-between;
+    height: 6.65rem;
+}
+nav ul{
+    list-style-type: none; 
+    display :inline-flex;
+    align-items: center;
+}
+nav ul li{
+    padding: 2rem;
+    margin: 0rem 2rem 0rem 2rem;
+}
+.first-new-account-button{
+    background-color: var(--button-item-color);
+    padding: auto 2rem auto 2rem;
+    margin: 0rem 0rem 0rem 2rem;
+}
+.first-new-account-button a{
+    color: var(--bgcolor-theme);
+}
+nav ul li a {
+    text-transform: uppercase;
+}
+/* Fin de la barre de navigation*/
+
+
+/* Section d'accueil */
+.welcome-picture {
+    background-image: url('../asset/home-hero.jpg');
+    background-size:100%; /* Ajuste la taille de l'image pour couvrir toute la section */
+    background-position: center; /* Centre l'image */
+    color: var(--bgcolor-theme); /* Couleur du texte */
+    padding: 15rem; /* Espacement interne pour séparer le texte de l'image */
+}
+.welcome-picture p{
+    font-family: 'Open-sans',sans-serif;
+    font-size: 5.5rem;
+    padding: 0.15rem 0rem;
+    margin: 8rem auto 4rem -1rem;
+    text-align:left; /* Alignement du texte à gauche */
+
+}
+
+.second-new-account-button{
+    text-transform: uppercase;
+    font-family: 'Open-sans', sans-serif;
+    color: var(--bgcolor-theme);
+    background-color: var(--button-item-color);
+    padding: 2.5rem;
+    margin:-1rem;
+}
+
+
+footer p {
+    text-align: center;
+    max-width: 120rem;
+    margin: auto;
+}
