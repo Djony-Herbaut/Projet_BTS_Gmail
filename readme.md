@@ -1,3 +1,4 @@
+[!lien du site](https://djony-herbaut.github.io/Projet_BTS_Gmail/)
 # Charte Graphique et Typographique
 
 - **Police de Caractère :** Open-Sans, sans-serif, taille de base dans `body` 1.6rem
