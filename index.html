@@ -41,7 +41,7 @@
         </nav> 
     </header>
 
-    <div class="welcome-picture" id="welcome-picture">
+    <div id="welcome-picture" class="welcome-picture" >
         <p>Retrouvez la fluidité et la <br> simplicité de Gmail sur <br> tous vos appareils </p>
         <a class="second-new-account-button" href="#new-account" itemprop="url">
             Créer un compte
@@ -50,7 +50,8 @@
     <main>
         <section id="new-account">
             <h2>
-                Une boîte de réception entièrement repensée
+                Une boîte de réception<br>
+                entièrement repensée
             </h2>
             <p>
                 Avec les nouveaux onglets personnalisables, repérez<br>
@@ -59,8 +60,8 @@
             </p>
             <div class="inner-form" role="form">
                 <fieldset>
-                    <legend>Créer un compte</legend>
-                    <form action="index.php" method="post"> <!-- mettre le nom du fichier html dans aciton -->
+                    <legend><h2>Créer un compte</h2></legend>
+                    <form action="connexion.html" method="post"> <!-- mettre le nom du fichier html dans aciton -->
                         <label for="nom">Nom *</label>
                         <input type="text" id="nom" name="nom" placeholder="Nom" aria-required="true"  autofocus>
     
@@ -68,12 +69,15 @@
                         <input type="text" id="prenom" name="prenom" placeholder="Prénom" aria-required="true">
     
                         <label for="mail">Mail *</label>
-                        <input type="email" id="mail" name="mail" placeholder="Votre mail" aria-required="true">
+                        <input type="email" id="mail" name="mail" placeholder="Veuillez entre votre mail" aria-required="true">
             
-                        <label for="password">Créer votre mot de passe *</label>
-                        <input type="password" id="password" name="password" placeholder="Votre mot de passe" aria-required="true">
+                        <label for="password">Choisissez votre mot de passe *</label>
+                        <input type="password" id="password" name="password" placeholder="Veuillez entrez votre mot de passe" aria-required="true">
 
-                        <button type="submit" value="Envoyer" aria-label="cliquez pour envoyer">Valider votre compte</button>
+                        <div class="button-account">
+                            <button type="submit" value="Envoyer" aria-label="cliquez pour envoyer" itemprop="button">Valider votre compte</button>
+                        </div>
+                        
                     </form>
                 </fieldset>
             </div>
