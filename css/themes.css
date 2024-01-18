@@ -127,7 +127,28 @@ nav ul li a {
     padding: 2.5rem;
     margin:-1rem;
 }
+main .inner-form{
+    max-width: 80.0rem;
+    margin: 5rem auto 0;
+    padding: 2rem;
+}
 
+fieldset legend{
+    font-size: 2rem;
+    padding: 1rem;
+}
+fieldset{
+    padding: 1rem;
+    border: solid .1rem var(--color-theme-main);
+    border-radius: .4rem;
+}
+fieldset form *{
+    display: block;
+    width: 100%;
+    line-height: 3.5rem;
+    border: solid .1rem #ccc;
+    margin-bottom: .5rem;
+}
 
 footer p {
     text-align: center;

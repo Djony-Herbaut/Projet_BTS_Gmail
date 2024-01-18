@@ -22,7 +22,7 @@
     <title>Gmail</title>
     
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/website">
     <header>
         <nav class="navbar" aria-label="principal menu">
             <section class="icon">
@@ -33,22 +33,50 @@
             </section>
 
             <ul itemprop="genre">
-                <li><a href="" itemprop="url">Pour les pros</a></li>
-                <li><a href="" itemprop="url">Connexion</a></li>
+                <li><a href="#welcome-picture" itemprop="url">Pour les pros</a></li>
+                <li><a href="connexion.html" itemprop="url">Connexion</a></li>
                 <li class="first-new-account-button"><a href="#new-account" itemprop="url">Créer Un Compte</a></li>
             </ul>                
         
         </nav> 
     </header>
 
-    <section class="welcome-picture">
+    <div class="welcome-picture" id="welcome-picture">
         <p>Retrouvez la fluidité et la <br> simplicité de Gmail sur <br> tous vos appareils </p>
         <a class="second-new-account-button" href="#new-account" itemprop="url">
             Créer un compte
         </a>
-    </section>
-
+    </div>
     <main>
+        <section id="new-account">
+            <h2>
+                Une boîte de réception entièrement repensée
+            </h2>
+            <p>
+                Avec les nouveaux onglets personnalisables, repérez<br>
+                Immédiatement les nouveaux messages et choisissez <br>
+                ceux vous souhaitez lire en priorité.
+            </p>
+            <div class="inner-form" role="form">
+                <fieldset>
+                    <legend>Créer un compte</legend>
+                    <form action="index.php" method="post"> <!-- mettre le nom du fichier html dans aciton -->
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom" placeholder="Nom" aria-required="true"  autofocus>
+    
+                        <label for="prenom">Prénom *</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Prénom" aria-required="true">
+    
+                        <label for="mail">Mail *</label>
+                        <input type="email" id="mail" name="mail" placeholder="Votre mail" aria-required="true">
+            
+                        <label for="password">Créer votre mot de passe *</label>
+                        <input type="password" id="password" name="password" placeholder="Votre mot de passe" aria-required="true">
 
+                        <button type="submit" value="Envoyer" aria-label="cliquez pour envoyer">Valider votre compte</button>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
     </main>
 </body>
