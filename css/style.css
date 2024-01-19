@@ -87,67 +87,27 @@ nav ul li{
     padding: 2rem;
     margin: 0rem 2rem 0rem 2rem;
 }
-.first-new-account-button{
+.first-new-account-button-connect{
     background-color: var(--button-item-color);
-    padding: auto 2rem auto 2rem;
-    margin: 0rem 0rem 0rem 2rem;
 }
-.first-new-account-button a{
+.first-new-account-button-connect a{
     color: var(--bgcolor-theme);
 }
 nav ul li a {
     text-transform: uppercase;
 }
-/* Fin de la barre de navigation*/
 
 
-/* Section d'accueil */
-.welcome-picture {
-    background-image: url('../asset/home-hero.jpg');
-    background-size:cover; /* Ajuste la taille de l'image pour couvrir toute la section */
-    background-position: center; /* Centre l'image */
-    color: var(--bgcolor-theme); /* Couleur du texte */
-    padding: 15rem; /* Espacement interne pour séparer le texte de l'image */
-    min-height: 100vh;
-}
-.welcome-picture p{
-    font-family: 'Open-sans',sans-serif;
-    font-size: 5.5rem;
-    padding: 0.15rem 0rem;
-    margin: 8rem auto 4rem -1rem;
-    text-align:left; /* Alignement du texte à gauche */
-
-}
-
-.second-new-account-button{
-    text-transform: uppercase;
-    font-family: 'Open-sans', sans-serif;
-    color: var(--bgcolor-theme);
-    background-color: var(--button-item-color);
-    padding: 2.5rem;
-    margin:-1rem;
-}
-
-/* CSS de la partie Création de compte */
+/* CSS de la partie Connexion de compte */
 main{
     min-height: 100vh;
+    margin-top: 10rem;
 }
 
-#new-account h2{
+#connexion h2{
     display: flex;
     justify-content: center;
-    margin: 1.6rem;
-    margin-top: 4rem;
-    padding: 1.6rem;
-    font-size: 3rem;
-    text-align: center;
-}
-#new-account p{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding: auto;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     text-align: center;
 }
 
@@ -168,12 +128,12 @@ fieldset {
     margin: 2rem;
 }
 
-#new-account legend{
+.inner-form legend{
     padding: 0.1rem;
     margin: 0.1rem;
 }
-#new-account legend h2{
-    font-size: 2rem;
+.inner-form legend h2{
+    font-size: 2.5rem;
     font-family: 'Open-sans',sans-serif;
     padding: 0.5rem;
     margin: 0.5rem;
