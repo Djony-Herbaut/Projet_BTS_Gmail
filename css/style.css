@@ -157,6 +157,9 @@ input {
     border-bottom: 0.1rem solid #a7a3a3;
     background-color: #d8d8d8;
 }
+input::placeholder{
+    color :#2c2b2b;
+}
 
 .button-account {
     background-color: dodgerblue;
