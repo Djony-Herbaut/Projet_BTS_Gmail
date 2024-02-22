@@ -1,5 +1,5 @@
 <?php
-    include_once __DIR__."./controller/controller.inc.php"
+    include_once __DIR__."./connexion-controller.inc.php"
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
 
-    <link rel="stylesheet" href="./css/themes.css">
-    <title>Gmail</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Connectez-vous à votre compte </title>
     
 </head>

@@ -19,7 +19,7 @@
     <div class="inner-form" role="form">
         <fieldset>
             <legend><h2>Créer un compte</h2></legend>
-            <form action="./connexion.html" method="post"> <!-- mettre le nom du fichier html dans aciton -->
+            <form action="connexion.php" method="post"> <!-- mettre le nom du fichier html dans aciton -->
                 <label for="nom">Nom *</label>
                 <input type="text" id="nom" name="nom" placeholder="Nom" aria-required="true"  autofocus>
 
@@ -41,3 +41,6 @@
     </div>
 </section>
 </main>
+<?php
+    include_once __DIR__."/connexion.php";
+?>
