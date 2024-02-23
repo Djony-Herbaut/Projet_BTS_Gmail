@@ -13,7 +13,7 @@
 
             <ul itemprop="genre">
                 <li><a href="./index.php#welcome-picture" itemprop="url">Pour les pros</a></li>
-                <li class="first-new-account-button-connect"><a href="connexion.html" itemprop="url">Connexion</a></li>
+                <li class="first-new-account-button-connect"><a href="connexion.php" itemprop="url">Connexion</a></li>
                 <li><a href="./index.php#new-account" itemprop="url">Créer Un Compte</a></li>
             </ul>                
         
