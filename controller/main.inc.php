@@ -1,3 +1,7 @@
+<?php
+include_once __DIR__."/controller/controller.inc.php";
+?>
+
 <main >
 
 <div id="scroll" class="button-scroll">
