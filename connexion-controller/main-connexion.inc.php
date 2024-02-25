@@ -1,7 +1,3 @@
-<?php
-    include_once __DIR__."./connexion-controller.inc.php"
-?>
-
 <main>
         <div id="scroll" class="button-scroll">
             <a href="#"> 
@@ -11,13 +7,13 @@
 
         <section id="connexion">
             <h2>
-                Bienvenue dans votre espace null
+                Bienvenue dans votre espace de connection.
             </h2>
 
             <div class="inner-form" role="form">
                 <fieldset>
                     <legend><h2>Connectez-vous à votre compte</h2></legend>
-                    <form action="./home.php" method="post"> <!-- mettre le nom du fichier html dans aciton -->
+                    <form action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post"> <!-- mettre le nom du fichier html dans aciton -->
     
                         <label for="mail">Mail *</label>
                         <input type="email" id="mail" name="mail" placeholder="Veuillez entre votre mail" aria-required="true">
@@ -36,3 +32,6 @@
         </section>
     </main>
 </body>
+<?php
+    include_once "connexion-controller/connexion-controller.inc.php"
+?>

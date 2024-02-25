@@ -18,8 +18,6 @@
         return $donnees;
     }
 
-    session_start();
-
     if (!empty($prenom)
         && strlen($prenom) <= 20
         && strlen($nom) <= 20
@@ -63,7 +61,7 @@
 
             // Redirection vers connexion.php
             header("Location: connexion.php");
-            exit(); // Terminer le script après la redirection
+            exit();
 
         } catch(PDOException $e){
             echo 'Erreur : '.$e->getMessage();
