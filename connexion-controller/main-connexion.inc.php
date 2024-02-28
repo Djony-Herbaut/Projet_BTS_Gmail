@@ -7,7 +7,9 @@
 
         <section id="connexion">
             <h2>
-                Bienvenue dans votre espace de connection.
+                <?php 
+                    include_once "connexion-controller/connexion-controller.inc.php"
+                ?>
             </h2>
 
             <div class="inner-form" role="form">
@@ -32,6 +34,3 @@
         </section>
     </main>
 </body>
-<?php
-    include_once "connexion-controller/connexion-controller.inc.php"
-?>
