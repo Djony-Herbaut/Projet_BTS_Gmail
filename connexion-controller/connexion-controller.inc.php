@@ -1,5 +1,4 @@
 <?php
-include_once __DIR__ . "/home.php";
 session_start();
 
 $serveur = "localhost";
