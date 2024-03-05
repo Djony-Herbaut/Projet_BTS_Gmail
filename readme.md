@@ -1,4 +1,4 @@
-# Le Lien du site [ ici](https://djony-herbaut.github.io/Projet_BTS_Gmail/!index.html)
+# Le Lien du site [ ici](https://djony-herbaut.github.io/Projet_BTS_Gmail/index.html)
 
 ## Charte Graphique et Typographique
 
